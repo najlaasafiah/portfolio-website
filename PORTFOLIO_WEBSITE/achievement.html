@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Achievements - Najlaa Safiah</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header>
+            <a href="student.html" class="logo" title="Student Info">
+                <img src="images_pw/ns logo.png" alt="NS Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="achievement.html" class="active">Achievements</a></li>
+                    <li><a href="qualification.html">Qualifications</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="achievement-page">
+            <section>
+                <h1>My Achievements</h1>
+                <p>Here are some of the notable recognitions and acomplishments I've received throughout my academic and personal journey:</p>
+
+                <div class="=achievement-list">
+                    <div class="achievement-item" onclick="openModal('images_pw/sejs1.jpg')">
+                        <h3>Top Student in History Subject (STPM)</h3>
+                        <p>Awarded for outstanding academic performance during Semester 1.</p>
+                    </div>
+
+                    <div class="achievement-item">
+                        <h3>Top Student in MUET</h3>
+                        <p>Awarded for getting highest band and score in MUET subject.</p>
+                    </div>
+                </div>
+
+                <div class="certificate-grid">
+                    <div class="certificate-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>AJK Urusetia - Merentas Desa 2023</h3>
+                                <p>Recognized for serving as a committee member for statistics and logistics (AJK Urusetia dan Statistik) in the Kejohanan Merentas Desa 2023 at SMK Penarek.</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="images_pw/cert_ajk.jpg" alt="Merentas Desa Certificate" onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Digital Competency</h3>
+                                <p>Awarded “Digital Advance” level in the national Digital Competency Score program.</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="images_pw/cert_digital competency.jpg" alt="Digital Competency Certificate" onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Smart City Project - STEM UKM x ExxonMobil</h3>
+                                <p>Won 3rd place in the Smart City Innovation Project Competition at district level.</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="images_pw/cert_smart city.jpg" alt="Smart City Certificate" onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>STEM Decathlon Challenge</h3>
+                                <p>Participated in the STEM Decathlon Challenge at national level showcasing problem-solving and collaboration skills.</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="images_pw/cert_stem.jpg" alt="STEM Decathlon Certificate" onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Silat Seni Competition - District Level</h3>
+                                <p>Represented the school in the traditional martial arts Silat Seni competition (Seni Gayong) at district level.</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="images_pw/cert_silat.jpg" alt="Silat Seni Certificate" onclick="openModal(this.src)">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="image-modal" class="modal" onclick="closeModal()">
+                    <span class="modal-close">&times;</span>
+                    <img class="modal-content" id="modal-img">
+                </div>
+
+            </section>
+        </main>
+
+        <button id="theme-toggle" class="utility-button">🌙</button>
+        <button id="scroll-to-top" class="utility-button">⬆</button>
+
+        <footer>
+            <p>&copy; 2025 Najlaa Safiah. All rights reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>        
+
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Qualifications - Najlaa Safiah</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header>
+            <<a href="student.html" class="logo" title="Student Info">
+                <img src="images_pw/ns logo.png" alt="NS Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="achievement.html">Achievements</a></li>
+                    <li><a href="qualification.html" class="active">Qualifications</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="qualification-page">
+            <section>
+                <h1>My Qualifications</h1>
+                <p>Here are the formal qualifications and skill sets I've acquired over the years:</p>
+
+                <div class="qualifications">
+                    <div class="qualification-item">
+                        <h3>Bachelor of Information Science (Hons.) Information Content Management</h3> 
+                        <p>Universiti Teknologi MARA (UiTM) - 2024 to Present</p>
+                    </div>
+
+                    <div class="qualification-item" onclick="openModal('images_pw/stpm.jpg')"> 
+                        <h3>STPM - CGPA 3.42</h3>
+                        <p>SMK Penarek - 2022 to 2024</p>
+                    </div>
+
+                    <div class="qualification-item">
+                        <h3>SPM - Science Stream</h3>
+                        <p>SMK Penarek - 2019 to 2021</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section>
+                <h2>My Expertise</h2>
+                <ul class="skills-list">
+                    <li>Web Design (HTML, CSS)</li>
+                    <li>Programming Languages (C, C++, JavaScript, basic Phyton)</li>
+                    <li>Database Management (SQL)</li>
+                    <li>Graphic Design (Canva)</li>
+                </ul>
+            </section>
+        </main>
+
+        <button id="theme-toggle" class="utility-button">🌙</button>
+        <button id="scroll-to-top" class="utility-button">⬆</button>
+
+        <footer>
+            <p>&copy; 2025 Najlaa Safiah. All rights reserved.</p>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+        <div id="image-modal" class="image-modal" onclick="closeModal()">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="Full Certificate View">
+        </div>
+
+    </body>
+</html>
